@@ -1,0 +1,14 @@
+{
+  "name": "verificationbot",
+  "description": "a verifying bot",
+  "version": "1",
+  "dependencies": {
+    "https://www.npmjs.com/package/discord.js": "11.0.0"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "http://github.com/barredgalaxy/verificationbot.git"
+    }
+  ]
+}
