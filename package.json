@@ -1,14 +1,20 @@
 {
-  "name": "verificationbot",
-  "description": "a verifying bot",
-  "version": "1",
-  "dependencies": {
-    "https://www.npmjs.com/package/discord.js": "11.0.0"
-  },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "http://github.com/barredgalaxy/verificationbot.git"
+    "name": "verificationbot",
+    "version": "1.0.0",
+    "description": "a verification bot",
+    "main": "verif.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/barredgalaxy/verificationbot.git"
+    },
+    "bugs": {
+        "url": "https://github.com/barredgalaxy/verificationbot/issues"
+    },
+    "scripts": {
+        "start": "node verif.js"
+    },
+    "author": "BarredGalaxy",
+    "dependencies": {
+        "discord.js": "^11.0.0"
     }
-  ]
 }
