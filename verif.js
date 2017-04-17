@@ -199,4 +199,4 @@ client.on('message', msg => {
 });
 
  
-client.login('Mjk3ODMyNzI0NjA4MDU3MzQ0.C9TeJQ.WK7-25lWqKn7Q6OugAEM6NYqGAM');
+client.login('no');
