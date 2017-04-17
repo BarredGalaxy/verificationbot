@@ -27,10 +27,16 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setGame("HonkBot: *help | I'm Currently in " + client.guilds.size + " Servers! | NEW MONTHLY CHALLENGES COMING SOON!")
   client.channels.get('275777565124198400').send("**Monthly Challenges:** Who ever makes the __BEST__ honkbot logo will get __**400 t! Credits & 1 REP**__ (More info: *monthly)");
+  client.channels.get('277217406340956170').send("honk me daddy");
 });
  
 client.on('message', msg => {
   if(msg.author.bot) return;
+   if (msg.content.startsWith(prefix + "send")) {
+    if (!msg.author.id == '241330918722109441') return;
+    let [channel, text] = msg.content.split("|").slice(1);
+    client.channels.get(channel).send(text);
+   }
   if (msg.content.startsWith(prefix + "slap")) {
     let [username] = msg.content.split(" ").slice(1);
     msg.channel.sendMessage(username + ' was slapped by ' + msg.author + '\n' + slap[Math.floor(Math.random() * slap.length)])
